@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulaire d'inscription </title>
+    <link rel="shortcut icon" href="./form.jpg">
+   <style>
+    .legend_fieldset{
+        font-family: sans-serif;
+    }
+    label{
+        font-family: sans-serif;
+    }
+    #nom ,#prenom , #email , #date ,#photo ,#pays_select ,#languages{
+        width: 300px;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 3px;
+     border: 1px solid #000307;
+    }
+    .buttons{
+        text-align: center;
+        
+    }
+    #envoyer , #annuler{ 
+        width: 300px;
+        height: 35px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .fait_par{
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        right: 2% ;
+    }
+   </style>
+
+</head>
+<body>
+    
+    <fieldset class="form-example">
+        <legend class="legend_fieldset"> Formulaire d'inscription</legend>
+        <p class="fait_par"> Fait Par : <strong>Neyrouz Khrouf</strong></p>
+        <div class="form-example">
+          <label for="nom">Nom : </label>
+          <input type="text" name="nom" id="nom" required />
+        </div>
+        <div class="form-example">
+            <label for="prenom">Prenom : </label>
+            <input type="text" name="prenom" id="prenom" required />
+          </div>
+        <div class="form-example">
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="form-example">
+            <label >Sexe : </label>
+            <input type="checkbox" id="masculin" name="masculin"  />
+            <label for="masculin">Masculin</label>
+            <input type="checkbox" id="feminin" name="feminin" checked/>
+            <label for="feminin">Féminin</label>
+          </div>
+          <div class="form-example">
+            <label for="date_naissance">Date de Naissance: </label>
+            <input id="date" type="date"  />
+          </div>
+          <div class="form-example">
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" />
+            
+          </div>
+          <div class="form-example">
+            <label for="pays_select">Choose a pet:</label>
+
+            <select name="pays" id="pays_select">
+              <option value="">--Selectionne votre Pays--</option>
+              <option value="Tunisie">Tunisie</option>
+              <option value="France">France</option>
+              <option value="Autres">Autres</option>
+
+            </select>
+            
+          </div>
+          <div class="form-example">
+            <label for="languages">Les languages préféres:</label>
+
+            <select name="pays" id="languages" multiple>
+              <option value="PHP">PHP</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="Java">Java</option>
+
+            </select>
+            
+          </div>
+          <div class="form-example">
+            <label >Domaines d'activités : </label>
+            <input type="checkbox" id="informatique" name="informatique" checked />
+            <label for="informatique">Informatique</label>
+            <input type="checkbox" id="gestion" name="gestion" />
+            <label for="gestion">Gestion</label>
+            <input type="checkbox" id="pedagogie" name="pedagogie" />
+            <label for="pedagogie">Pédagogie</label>
+          </div>
+        <div class="buttons">
+          <input type="submit" value="Envoyer!" id="envoyer"/>
+          <input type="submit" value="Annuler" id="annuler"/>
+        </div>
+      </fieldset>
+      
+</body>
+</html>
